@@ -1,9 +1,13 @@
-const ftoc = function() {
-
+const ftoc = function(degreesF) {
+  // fahrenheit to celsius: x°F = (x-32)*(5/9)°C
+  let degreesC = (degreesF - 32) * (5/9);
+  return parseFloat(degreesC.toFixed(1));
 };
 
-const ctof = function() {
-
+const ctof = function(degreesC) {
+  // celsius to fahrenheit: x°C = (x * (9/5) + 32)°F
+  let degreesF = (degreesC * (9/5) + 32);
+  return parseFloat(degreesF.toFixed(1));
 };
 
 // Do not edit below this line

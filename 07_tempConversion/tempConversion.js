@@ -7,7 +7,7 @@ const ftoc = function(degreesF) {
 const ctof = function(degreesC) {
   // celsius to fahrenheit: x°C = (x * (9/5) + 32)°F
   let degreesF = (degreesC * (9/5) + 32);
-  return parseFloat(degreesF.toFixed(1));
+  return Number(degreesF.toFixed(1)); // Number is an easier way to handle this
 };
 
 // Do not edit below this line

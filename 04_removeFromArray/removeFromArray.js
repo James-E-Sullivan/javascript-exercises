@@ -7,7 +7,6 @@ const removeFromArray = function(array) {
                 i--;
                 break; // breaks inner loop only
             }
-
         } 
     }
     return array;
